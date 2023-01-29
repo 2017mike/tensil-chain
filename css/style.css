@@ -1515,10 +1515,30 @@ a:hover {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding-bottom: 10px;
+  width: 100%;
 }
 
 .myContainer {
   max-width: 90%;
   padding-left: 5%;
   padding-right: 5%;
+}
+
+.myBtn {
+  width: 100%;
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    min-height: 75vh;
+  }
+}
+
+.myUnderline:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

@@ -1,6 +1,11 @@
 /* Base */
 :root {
-  --main-bg-color: #172e54;
+  --main-text-color: white;
+  --sec-text-color: black;
+  --main-bg-color: #002690;
+  --accent-color: blue;
+  --sec-bg-color: #cde2ff;
+  --main-font: "Roboto Slab", sans-serif;
 }
 
 body {
@@ -8,11 +13,10 @@ body {
   color: #4d4d4d;
   font-weight: 400;
   font-size: 0.9rem;
-  font-family: "Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
-  font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: var(--main-font);
+  /* font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
 }
 
 ::-moz-selection {
@@ -131,6 +135,7 @@ a:hover {
 
 .site-section {
   padding: 3em 0;
+  background-color: var(--main-bg-color);
 }
 @media (min-width: 768px) {
   .site-section {
@@ -175,7 +180,7 @@ a:hover {
   font-size: 20px;
 }
 .site-footer a {
-  color: #000;
+  color: var(--main-text-color);
 }
 .site-footer ul li {
   margin-bottom: 10px;
@@ -262,7 +267,7 @@ a:hover {
   width: 100%;
 }
 .site-navbar-wrap a {
-  color: #000;
+  color: var(--main-text-color);
 }
 .site-navbar-wrap .site-navbar-top {
   font-size: 0.8rem;
@@ -283,14 +288,14 @@ a:hover {
 }
 .site-navbar .site-logo a {
   font-weight: 200;
-  color: #000;
+  color: var(--main-text-color);
   white-space: nowrap;
 }
 .site-navbar .site-navigation .site-menu {
   margin-bottom: 0;
 }
 .site-navbar .site-navigation .site-menu .active > a {
-  color: #000;
+  color: var(--main-text-color);
 }
 .site-navbar .site-navigation .site-menu a {
   text-decoration: none !important;
@@ -305,12 +310,12 @@ a:hover {
   padding: 10px 10px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: rgba(0, 0, 0, 0.6);
+  color: var(--main-text-color);
   font-size: 15px;
   text-decoration: none !important;
 }
 .site-navbar .site-navigation .site-menu > li > a:hover {
-  color: #000;
+  color: var(--main-text-color);
 }
 .site-navbar .site-navigation .site-menu > li:last-child {
   padding-right: 0;
@@ -388,10 +393,10 @@ a:hover {
   -webkit-transition: 0s all;
   -o-transition: 0s all;
   transition: 0s all;
-  color: #343a40;
+  color: var(--main-text-color);
 }
 .site-navbar .site-navigation .site-menu .has-children .dropdown .active > a {
-  color: #000 !important;
+  color: var(--main-text-color) !important;
 }
 .site-navbar .site-navigation .site-menu .has-children .dropdown > li {
   list-style: none;
@@ -468,7 +473,7 @@ a:hover {
 .site-navbar .site-navigation .site-menu .has-children:hover > a,
 .site-navbar .site-navigation .site-menu .has-children:focus > a,
 .site-navbar .site-navigation .site-menu .has-children:active > a {
-  color: #000;
+  color: var(--main-text-color);
 }
 .site-navbar .site-navigation .site-menu .has-children:hover,
 .site-navbar .site-navigation .site-menu .has-children:focus,
@@ -530,7 +535,7 @@ a:hover {
   transition: 0.3s all ease;
 }
 .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close span:hover {
-  color: #25262a;
+  color: var(--main-text-color);
 }
 .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo {
   float: left;
@@ -565,7 +570,7 @@ a:hover {
   padding: 10px 20px;
   display: block;
   position: relative;
-  color: #212529;
+  color: var(--main-text-color);
 }
 .site-mobile-menu .site-nav-wrap a:hover {
   color: var(--main-bg-color);
@@ -760,7 +765,7 @@ a:hover {
   font-size: 15px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--main-text-color);
 }
 .site-block-feature p {
   color: rgba(255, 255, 255, 0.4);
@@ -796,7 +801,7 @@ a:hover {
   height: 100%;
 }
 .site-block-3 .feature h3 {
-  color: #000;
+  color: var(--main-text-color);
   font-size: 1.4rem;
 }
 .site-block-3 .feature:hover,
@@ -1579,4 +1584,35 @@ a {
 
 .bg-primary {
   background-color: var(--main-bg-color) !important;
+}
+
+.bg-secondary {
+  background-color: var(--sec-bg-color) !important;
+}
+
+.text-main {
+  color: var(--main-text-color) !important;
+}
+
+.text-sec {
+  color: var(--sec-text-color) !important;
+}
+
+.no-outline {
+  outline: none !important;
+  border: none !important;
+}
+
+.myFooter {
+  position: relative;
+  left: 10vw;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }

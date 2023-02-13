@@ -1633,3 +1633,9 @@ a {
 .bg-accent {
   background-color: var(--accent-color);
 }
+
+.certImg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}

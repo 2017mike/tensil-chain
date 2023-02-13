@@ -1629,3 +1629,7 @@ a {
   background-color: white;
   height: 1vh;
 }
+
+.bg-accent {
+  background-color: var(--accent-color);
+}

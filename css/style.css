@@ -3,7 +3,7 @@
   --main-text-color: white;
   --sec-text-color: black;
   --main-bg-color: #002690;
-  --accent-color: blue;
+  --accent-color: #001e70;
   --sec-bg-color: #cde2ff;
   --main-font: "Roboto Slab", sans-serif;
 }
@@ -316,6 +316,8 @@ a:hover {
 }
 .site-navbar .site-navigation .site-menu > li > a:hover {
   color: var(--main-text-color);
+  text-decoration: underline !important;
+  text-underline-offset: 4px;
 }
 .site-navbar .site-navigation .site-menu > li:last-child {
   padding-right: 0;
@@ -415,7 +417,9 @@ a:hover {
   .dropdown
   > li
   > a:hover {
-  color: var(--main-bg-color);
+  color: var(--main-text-color);
+  text-decoration: underline !important;
+  text-underline-offset: 4px !important;
 }
 .site-navbar
   .site-navigation
@@ -573,14 +577,18 @@ a:hover {
   color: var(--main-text-color);
 }
 .site-mobile-menu .site-nav-wrap a:hover {
-  color: var(--main-bg-color);
+  color: var(--main-text-color);
+  text-decoration: underline !important;
+  text-underline-offset: 4px !important;
 }
 .site-mobile-menu .site-nav-wrap li {
   position: relative;
   display: block;
 }
 .site-mobile-menu .site-nav-wrap li.active > a {
-  color: var(--main-bg-color);
+  color: var(--main-text-color);
+  text-decoration: underline !important;
+  text-underline-offset: 4px !important;
 }
 .site-mobile-menu .site-nav-wrap .arrow-collapse {
   position: absolute;
@@ -594,7 +602,7 @@ a:hover {
   border-radius: 50%;
 }
 .site-mobile-menu .site-nav-wrap .arrow-collapse:hover {
-  background: #f8f9fa;
+  background: var(--accent-color);
 }
 .site-mobile-menu .site-nav-wrap .arrow-collapse:before {
   font-size: 12px;
@@ -1604,8 +1612,8 @@ a {
 }
 
 .myFooter {
-  position: relative;
-  left: 10vw;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card {
@@ -1619,5 +1627,5 @@ a {
 
 .spacer {
   background-color: white;
-  height: 0.5vh;
+  height: 1vh;
 }

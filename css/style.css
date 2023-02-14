@@ -1639,3 +1639,36 @@ a {
   background-repeat: no-repeat;
   background-color: white;
 }
+
+.myToast {
+  position: relative;
+  bottom: 8vh;
+  background-color: #79e993;
+  padding: 1.5rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.toast {
+  z-index: 9999;
+}
+
+.toast-body,
+.toast-header,
+.toast-close-button {
+  z-index: 10000;
+}
+
+@media screen and (max-width: 500px) {
+  .myToast {
+    position: relative;
+    bottom: 7vh;
+  }
+}
+
+.hidden {
+  display: none;
+}

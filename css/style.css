@@ -1657,50 +1657,69 @@ a {
   align-items: center;
 }
 
+/* These are all just for preloading the image. If we don't do this then we get an annoying delay when we hover over them and it doesn't look smooth.  */
+.certOne:before {
+  content: url("../images/imagescerts/CEMALogoColor-01.webp");
+  display: none;
+}
+.certTwo:before {
+  content: url("../images/imagescerts/iabsc.webp");
+  display: none;
+}
+.certThree:before {
+  content: url("../images/imagescerts/PTDAnew.webp");
+  display: none;
+}
+.certFour:before {
+  content: url("../images/imagescerts/ul-reg.webp");
+  display: none;
+}
+/* end preload */
+
 .certOne {
-  background: url("../images/imagescerts/grey/cemagrey.jpeg");
+  background: url("../images/imagescerts/grey/cemagrey.webp");
   height: 20vh;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
 .certOne:hover {
-  background: url("../images/imagescerts/CEMALogoColor-01.jpeg");
+  background: url("../images/imagescerts/CEMALogoColor-01.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .certTwo {
-  background: url("../images/imagescerts/grey/iabscgrey.png");
+  background: url("../images/imagescerts/grey/iabscgrey.webp");
   height: 20vh;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
 .certTwo:hover {
-  background: url("../images/imagescerts/iabsc.png");
+  background: url("../images/imagescerts/iabsc.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .certThree {
-  background: url("../images/imagescerts/grey/PTDAnewgrey.png");
+  background: url("../images/imagescerts/grey/PTDAnewgrey.webp");
   height: 20vh;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
 .certThree:hover {
-  background: url("../images/imagescerts/PTDAnew.png");
+  background: url("../images/imagescerts/PTDAnew.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .certFour {
-  background: url("../images/imagescerts/ul-reg.png");
+  background: url("../images/imagescerts/ul-reg.webp");
   height: 20vh;
   background-size: contain;
   background-repeat: no-repeat;

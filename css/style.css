@@ -1634,10 +1634,77 @@ a {
   background-color: var(--accent-color);
 }
 
+.certDiv {
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem 0px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
 .certImg {
+  /*height: 25vh;
+  width: 15vw;
+  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certOne {
+  background: url("../images/imagescerts/grey/cemagrey.jpeg");
+  height: 20vh;
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: white;
+  background-position: center center;
+}
+.certOne:hover {
+  background: url("../images/imagescerts/CEMALogoColor-01.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.certTwo {
+  background: url("../images/imagescerts/grey/iabscgrey.png");
+  height: 20vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.certTwo:hover {
+  background: url("../images/imagescerts/iabsc.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.certThree {
+  background: url("../images/imagescerts/grey/PTDAnewgrey.png");
+  height: 20vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.certThree:hover {
+  background: url("../images/imagescerts/PTDAnew.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.certFour {
+  background: url("../images/imagescerts/ul-reg.png");
+  height: 20vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .myToast {

@@ -167,14 +167,15 @@
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <input type="submit" value="Send" class="btn btn-primary">
+                  <input type="submit" value="Send" class="btn btn-primary bg-primary" style="border: 1px white solid;">
                 </div>
               </div>
 
 
             </form>
             <div id="toastDiv" class="d-flex justify-content-center">
-              <div class="toast greenBg myToast" role="alert" aria-live="assertive" aria-atomic="true" id="myToast">
+              <div class="toast greenBg myToast hidden" role="alert" aria-live="assertive" aria-atomic="true"
+                id="myToast">
                 <div class="toast-header">
                   <!-- <img src="..." class="rounded mr-2" alt="..."> -->
                   <strong class="mr-auto">Tensile Chains</strong>
@@ -200,7 +201,7 @@
               <p class="mb-4 "><a href="#" class="text-danger">+1 (316) xxx-xxxx</a></p>
 
               <p class="mb-0 font-weight-bold">Email Address</p>
-              <p class="mb-0 text-danger"><a href="#" class="text-danger">sales@tensilechains.com</a></p>
+              <p class="mb-0 text-danger"><a href="mailto:sales@tensilechains.com">sales@tensilechains.com</a></p>
 
             </div>
 
@@ -248,16 +249,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
   <script>
 
-    $(document).ready(function () {
-      const option = { animation: true }
 
-      $(".toast").toast(option);
-      $(".toast").toast('show');
-
-    });
     document.getElementById('contactForm').addEventListener('submit', event => {
       event.preventDefault()
-      document.getElementById('myToast').classList.remove('hidden')
       const name = document.getElementById('fullName').value
       const message = document.getElementById('message').value
       const email = document.getElementById('email').value
@@ -271,10 +265,14 @@
       axios
         .post("https://www.michaelscharf.dev/email", body)
         .then(res => {
-          $('.toast').toast('show');
-          // if (res.data === 200) {
-          //   alert('Success! We will contact you shortly. Thank you for choosing Tensile Chains.')
-          // }
+          document.getElementById('myToast').classList.remove('hidden')
+
+          const options = {
+            animation: true,
+            delay: 500
+          }
+          $('.toast').toast(options);
+
           document.getElementById('fullName').value = ''
           document.getElementById('message').value = ''
           document.getElementById('email').value = ''

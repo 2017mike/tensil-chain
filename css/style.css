@@ -1766,4 +1766,11 @@ a {
 
 .logoPic {
   cursor: pointer;
+  width: 22vw;
+}
+
+@media screen and (max-width: 800px) {
+  .logoPic {
+    width: 50vw;
+  }
 }

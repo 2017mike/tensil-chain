@@ -1763,3 +1763,7 @@ a {
 .hidden {
   display: none;
 }
+
+.logoPic {
+  cursor: pointer;
+}

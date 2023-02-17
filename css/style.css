@@ -1765,12 +1765,18 @@ a {
 }
 
 .logoPic {
-  cursor: pointer;
-  width: 22vw;
+  /* cursor: pointer; */
+  width: 100% !important;
 }
 
 @media screen and (max-width: 800px) {
   .logoPic {
     width: 50vw;
+  }
+}
+@media screen and (min-width: 800px) {
+  .myNavContainer {
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
 }
